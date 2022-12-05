@@ -10,7 +10,7 @@ export class Solver {
     this.year = year;
     this.day = day;
     this.dirPath =
-      __dirname + "/" + this.year + "/Day" + this.day.padStart(2, "0");
+      __dirname + "/src/" + this.year + "/Day" + this.day.padStart(2, "0");
 
     this.rawInput = "";
     this.parsedInput = [""];

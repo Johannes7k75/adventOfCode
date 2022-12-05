@@ -1,4 +1,4 @@
-import { Solver } from "../../Solver";
+import { Solver } from "../../../Solver";
 
 type firstColumn = "A" | "B" | "C";
 type secondColumn = "X" | "Y" | "Z";

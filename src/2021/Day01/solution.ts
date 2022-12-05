@@ -1,4 +1,4 @@
-import { Solver } from "../../Solver";
+import { Solver } from "../../../Solver";
 
 const solver = new Solver({ year: "2021", day: "1" }).read();
 const data = solver.rawInput;
@@ -19,7 +19,7 @@ export function challengeTwo(data: string) {
 
   depths.reduce((p, c, ci, a) => {
     if (!a[ci - 1] || !a[ci + 1]) return c;
-    p + a[ci] + a[ci + 1] < c + a[ci + 1] + a[ci + 2] ? increased++ : null;
+    p + a[ci] + a[ci + 1] < c + a[ci + 11] + a[ci + 2] ? increased++ : null;
     return c;
   });
 
